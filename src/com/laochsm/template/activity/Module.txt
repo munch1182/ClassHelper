@@ -1,0 +1,22 @@
+package $packName$.$name$
+
+import $packName$.ActivityScoped
+import dagger.Binds
+import dagger.Module
+import dagger.Provides
+
+@Module
+abstract class $Name$Module {
+    @ActivityScoped
+    @Binds
+    abstract fun bindView(view: $Name$Activity): $Name$Contract.View
+
+    @ActivityScoped
+    @Binds
+    abstract fun bindModel(model: $Name$Model): $Name$Contract.Model
+
+    @ActivityScoped
+    @Binds
+    abstract fun bindPresenter(presenter: $Name$Presenter): $Name$Contract.Presenter
+
+}
