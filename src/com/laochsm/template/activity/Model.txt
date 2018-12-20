@@ -1,7 +1,0 @@
-package $packName$.$name$
-
-import javax.inject.Inject
-
-class $Name$Model @Inject constructor() : $Name$Contract.Model {
-
-}

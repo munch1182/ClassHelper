@@ -1,9 +1,0 @@
-package $packName$.app
-
-import dagger.Module
-import dagger.android.ContributesAndroidInjector
-
-@Module
-abstract class Modules {
-
-}

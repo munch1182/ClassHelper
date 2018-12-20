@@ -1,9 +1,0 @@
-package $packName$.$name$
-
-import $packName$.base.di.DaggerActivity
-import $packName$.di.ActivityScoped
-import javax.inject.Inject
-
-@ActivityScoped
-class $Name$Activity @Inject constructor() : DaggerActivity<$Name$Presenter>(), $Name$Contract.View {
-}
