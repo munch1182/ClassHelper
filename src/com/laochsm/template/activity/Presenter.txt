@@ -1,0 +1,16 @@
+package $packName$.$name$
+
+import javax.inject.Inject
+
+/**
+ * @author laochsm
+ * 2018/1/17 0017 17:50
+ */
+class $Name$Presenter @Inject constructor(override var v: $Name$Contract.View?) : $Name$Contract.Presenter {
+
+    @Inject lateinit var m: $Name$Contract.Model
+
+    override fun start() {
+    }
+
+}
