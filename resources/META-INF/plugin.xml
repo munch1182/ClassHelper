@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.munch.plugin.ClassHelper</id>
+  <name>ClassHelper</name>
+  <version>1.0.0</version>
+  <vendor email="munch1182@qq.com" url="https://github.com/munch1182">No Company</vendor>
+
+  <description><![CDATA[
+      生成所需的代码和自动创建实现类，并实现方法。
+      根据输入名称的选择生产所需类。
+      保存常用数据。<br />
+      <hr />
+    ]]></description>
+
+  <change-notes><![CDATA[
+    v1.0 完成生产代码功能
+    v2.0 完成保存功能
+    v3.0 更多代码生产
+    v4.0 根据模板生产
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0" />
+
+  <!-- please see http://www.jetbrainws.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <!--<internalFileTemplate name="Contract"/>-->
+    <applicationConfigurable instance="SettingConfigurable"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="com.munch.plugin.ClassHelper" class="ClassHelper" text="ClassHelper"
+        description="ClassHelper">
+      <add-to-group group-id="NewGroup" anchor="first" />
+      <keyboard-shortcut keymap="$default" first-keystroke="alt V" />
+    </action>
+  </actions>
+
+</idea-plugin>
